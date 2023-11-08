@@ -85,13 +85,16 @@ Table of Contents
 
 1.  Introduction
 
-   COSE defined detached payloads in rfc9052#section-2.  However, a
-   detached payload cose sign 1 still requires the payload content to be
-   availble in order to verify.
+   COSE defined detached payloads in [RFC9052] in Section 2.  However,
+   in order to verify a detached payload the payload content needs to
+   availble.
 
-   For large payloads this is a problem.  This draft addresses this
-   problem by describing a simply way to sign hashes of large payloads
-   while maintaining information about their content type.
+   This is challenging for large payload, which can not be easily be
+   transported.
+
+   This draft addresses this challenge by describing a simply way to
+   protect hashes of payloads while maintaining information about their
+   content type.
 
 1.1.  Signed Hashes
 
@@ -213,6 +216,11 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
+
+   [RFC9052]  Schaad, J., "CBOR Object Signing and Encryption (COSE):
+              Structures and Process", STD 96, RFC 9052,
+              DOI 10.17487/RFC9052, August 2022,
+              <https://www.rfc-editor.org/rfc/rfc9052>.
 
 Acknowledgments
 
