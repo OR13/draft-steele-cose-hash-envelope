@@ -101,8 +101,8 @@ Table of Contents
 1.1.1.  Protected Header
 
    TBD 0 (typ), TBD 1 (payload has alg) and TBD 2 (payload content type)
-   are MUST be present in the protected header and MUST NOT be present
-   in the unprotected header.
+   MUST be present in the protected header and MUST NOT be present in
+   the unprotected header.
 
    {
      / Algorithm                           /
