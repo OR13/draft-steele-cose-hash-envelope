@@ -78,7 +78,7 @@ Table of Contents
      3.1.  Choice of Hash Function
    4.  IANA Considerations
      4.1.  COSE Header Algorithm Parameters
-       4.1.1.  Named Information Hash Algorithm Registry
+     4.2.  Named Information Hash Algorithm Registry
    5.  Normative References
    Acknowledgments
    Author's Address
@@ -179,7 +179,7 @@ Table of Contents
 
    *  Description: Hash algorithm used to produce the payload.
 
-4.1.1.  Named Information Hash Algorithm Registry
+4.2.  Named Information Hash Algorithm Registry
 
    *  Name: SHAKE256
 
