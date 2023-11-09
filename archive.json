@@ -1,0 +1,87 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-11-09T00:01:45.422500+00:00",
+  "repo": "OR13/draft-steele-cose-hash-envelope",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOKqKrRc52B13I",
+      "title": "something like",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/1",
+      "state": "CLOSED",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "## Usage\r\n\r\n~~~~ cbor-diag\r\n{      \r\n  / Algorithm                           /                        \r\n  1: -35,                        \r\n  / Key identifier                      /\r\n  4: h'75726e3a...32636573',     \r\n  / typ of the envelope                 /\r\n  TBD 0: application/hashed+cose \r\n  / Hash algorithm of the payload       /\r\n  TBD 1: sha-256                  \r\n  / cty of the preimage of the payload  /\r\n  TBD 2: application/jwk+json    \r\n}\r\n~~~~\r\n",
+      "createdAt": "2023-11-06T22:33:34Z",
+      "updatedAt": "2023-11-06T22:36:33Z",
+      "closedAt": "2023-11-06T22:36:33Z",
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOKqKrRc52Ptdt",
+      "title": "Follow composit sigs approach ",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/2",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Per-hash with domain binding.",
+      "createdAt": "2023-11-08T15:11:48Z",
+      "updatedAt": "2023-11-08T15:11:48Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": []
+}
