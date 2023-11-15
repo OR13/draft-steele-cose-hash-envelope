@@ -2,9 +2,9 @@
 
 
 
-CBOR Object Signing and Encryption                             O. Steele
+Network Working Group                                          O. Steele
 Internet-Draft                                                 Transmute
-Intended status: Informational                          15 November 2023
+Intended status: Standards Track                        15 November 2023
 Expires: 18 May 2024
 
 
@@ -104,7 +104,7 @@ Table of Contents
    preimage of the payload) MUST be present in the protected header and
    MUST NOT be present in the unprotected header.
 
-   TBD 0 will be assinged by [I-D.ietf-cose-type-parameter], it
+   TBD 0 will be assinged by [I-D.ietf-cose-typ-header-parameter], it
    represents the content type of the code envelope, which includes the
    protected header and payload.
 
@@ -159,7 +159,7 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-   TBD 0:  will be assinged by [I-D.ietf-cose-type-parameter], it
+   TBD 0:  will be assinged by [I-D.ietf-cose-typ-header-parameter], it
       represents the content type of the code envelope, which includes
       the protected header and payload.
 
@@ -223,8 +223,12 @@ Table of Contents
 
 5.  Normative References
 
-   [I-D.ietf-cose-type-parameter]
-              "*** BROKEN REFERENCE ***".
+   [I-D.ietf-cose-typ-header-parameter]
+              Jones, M. B. and O. Steele, "COSE "typ" (type) Header
+              Parameter", Work in Progress, Internet-Draft, draft-ietf-
+              cose-typ-header-parameter-01, 7 November 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-cose-
+              typ-header-parameter-01>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,

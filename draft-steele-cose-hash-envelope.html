@@ -10,9 +10,7 @@
        This draft defines a mechanism for signing hashes of payloads along with hints about their content format and availability. 
     " name="description">
 <meta content="xml2rfc 3.18.2" name="generator">
-<meta content="next generation" name="keyword">
-<meta content="unicorn" name="keyword">
-<meta content="sparkling distributed ledger" name="keyword">
+<meta content="Internet-Draft" name="keyword">
 <meta content="draft-steele-cose-hash-envelope-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.18.2
@@ -1039,7 +1037,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="internal-metadata" class="document-information">
 <dl id="identifiers">
 <dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">CBOR Object Signing and Encryption</dd>
+<dd class="workgroup">Network Working Group</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
 <dd class="internet-draft">draft-steele-cose-hash-envelope-latest</dd>
 <dt class="label-published">Published:</dt>
@@ -1047,7 +1045,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <time datetime="2023-11-15" class="published">15 November 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Informational</dd>
+<dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
 <dd class="expires"><time datetime="2024-05-18">18 May 2024</time></dd>
 <dt class="label-authors">Author:</dt>
@@ -1205,7 +1203,7 @@ However, in order to verify a detached payload the payload content needs to avai
 <a href="#section-1.1.1" class="section-number selfRef">1.1.1. </a><a href="#name-protected-header" class="section-name selfRef">Protected Header</a>
           </h4>
 <p id="section-1.1.1-1">TBD 0 (typ), TBD 1 (payload hash alg) and TBD 2 (content type of the preimage of the payload) <span class="bcp14">MUST</span> be present in the protected header and <span class="bcp14">MUST NOT</span> be present in the unprotected header.<a href="#section-1.1.1-1" class="pilcrow">¶</a></p>
-<p id="section-1.1.1-2">TBD 0 will be assinged by <span>[<a href="#I-D.ietf-cose-type-parameter" class="cite xref">I-D.ietf-cose-type-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-1.1.1-2" class="pilcrow">¶</a></p>
+<p id="section-1.1.1-2">TBD 0 will be assinged by <span>[<a href="#I-D.ietf-cose-typ-header-parameter" class="cite xref">I-D.ietf-cose-typ-header-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-1.1.1-2" class="pilcrow">¶</a></p>
 <div class="lang-cbor-diag sourcecode" id="section-1.1.1-3">
 <pre>
 {
@@ -1288,7 +1286,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <span class="break"></span><dl class="dlParallel" id="section-2-2">
         <dt id="section-2-2.1">TBD 0:</dt>
         <dd style="margin-left: 1.5em" id="section-2-2.2">
-          <p id="section-2-2.2.1">will be assinged by <span>[<a href="#I-D.ietf-cose-type-parameter" class="cite xref">I-D.ietf-cose-type-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-2-2.2.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.2.1">will be assinged by <span>[<a href="#I-D.ietf-cose-typ-header-parameter" class="cite xref">I-D.ietf-cose-typ-header-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-2-2.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
 <dt id="section-2-2.3">TBD 1:</dt>
@@ -1396,9 +1394,9 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
-<dt id="I-D.ietf-cose-type-parameter">[I-D.ietf-cose-type-parameter]</dt>
+<dt id="I-D.ietf-cose-typ-header-parameter">[I-D.ietf-cose-typ-header-parameter]</dt>
       <dd>
-<span class="refTitle">"*** BROKEN REFERENCE ***"</span>. </dd>
+<span class="refAuthor">Jones, M. B.</span> and <span class="refAuthor">O. Steele</span>, <span class="refTitle">"COSE "typ" (type) Header Parameter"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-cose-typ-header-parameter-01</span>, <time datetime="2023-11-07" class="refDate">7 November 2023</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-cose-typ-header-parameter-01">https://datatracker.ietf.org/doc/html/draft-ietf-cose-typ-header-parameter-01</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
       <dd>
