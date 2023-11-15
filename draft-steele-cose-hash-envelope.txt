@@ -4,8 +4,8 @@
 
 CBOR Object Signing and Encryption                             O. Steele
 Internet-Draft                                                 Transmute
-Intended status: Informational                           8 November 2023
-Expires: 11 May 2024
+Intended status: Informational                          15 November 2023
+Expires: 18 May 2024
 
 
                            COSE Hash Envelope
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 May 2024.
+   This Internet-Draft will expire on 18 May 2024.
 
 Copyright Notice
 
@@ -100,9 +100,13 @@ Table of Contents
 
 1.1.1.  Protected Header
 
-   TBD 0 (typ), TBD 1 (payload has alg) and TBD 2 (payload content type)
-   MUST be present in the protected header and MUST NOT be present in
-   the unprotected header.
+   TBD 0 (typ), TBD 1 (payload hash alg) and TBD 2 (content type of the
+   preimage of the payload) MUST be present in the protected header and
+   MUST NOT be present in the unprotected header.
+
+   TBD 0 will be assinged by [I-D.ietf-cose-type-parameter], it
+   represents the content type of the code envelope, which includes the
+   protected header and payload.
 
    {
      / Algorithm                           /
@@ -154,6 +158,15 @@ Table of Contents
    "OPTIONAL" in this document are to be interpreted as described in
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
+
+   TBD 0:  will be assinged by [I-D.ietf-cose-type-parameter], it
+      represents the content type of the code envelope, which includes
+      the protected header and payload.
+
+   TBD 1:  the hash algorithm used to generate the hash about the
+      payload
+
+   TBD 2:  the content type of the payload the hash represents
 
 3.  Security Considerations
 
@@ -209,6 +222,9 @@ Table of Contents
       cryptography/documents/round-2/spec-doc-rnd2/ascon-spec-round2.pdf
 
 5.  Normative References
+
+   [I-D.ietf-cose-type-parameter]
+              "*** BROKEN REFERENCE ***".
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
