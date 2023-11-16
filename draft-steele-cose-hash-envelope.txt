@@ -4,8 +4,8 @@
 
 Network Working Group                                          O. Steele
 Internet-Draft                                                 Transmute
-Intended status: Standards Track                        15 November 2023
-Expires: 18 May 2024
+Intended status: Standards Track                        16 November 2023
+Expires: 19 May 2024
 
 
                            COSE Hash Envelope
@@ -13,8 +13,12 @@ Expires: 18 May 2024
 
 Abstract
 
-   This draft defines a mechanism for signing hashes of payloads along
-   with hints about their content format and availability.
+   This document defines new COSE header parameters in support of a
+   mechanism that uses hashes of detached payload as the COSE payload,
+   which enables faster signature validation for detached payload as the
+   availability of the original payload is not required for signature
+   validation.  Additionally, hints about the detached payload's content
+   format and availability are defined.
 
 About This Document
 
@@ -49,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 May 2024.
+   This Internet-Draft will expire on 19 May 2024.
 
 Copyright Notice
 
@@ -164,9 +168,9 @@ Table of Contents
       the protected header and payload.
 
    TBD 1:  the hash algorithm used to generate the hash about the
-      payload
+      payload.
 
-   TBD 2:  the content type of the payload the hash represents
+   TBD 2:  the content type of the payload the hash represents.
 
 3.  Security Considerations
 
