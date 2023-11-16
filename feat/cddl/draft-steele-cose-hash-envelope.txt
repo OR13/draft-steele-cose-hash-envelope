@@ -13,8 +13,12 @@ Expires: 19 May 2024
 
 Abstract
 
-   This draft defines a mechanism for signing hashes of payloads along
-   with hints about their content format and availability.
+   This document defines new COSE header parameters in support of a
+   mechanism that uses hashes of detached payload as the COSE payload,
+   which enables faster signature validation for detached payload as the
+   availability of the original payload is not required for signature
+   validation.  Additionally, hints about the detached payload's content
+   format and availability are defined.
 
 About This Document
 
@@ -114,12 +118,12 @@ Table of Contents
       the protected header and payload.
 
    TBD 1:  the hash algorithm used to generate the hash about the
-      payload
+      payload.
 
-   TBD 2:  the content type of the payload the hash represents
+   TBD 2:  the content type of the payload the hash represents.
 
    TBD 3:  an identifier enabling a verifier to retrieve the full
-      payload preimage
+      payload preimage.
 
 3.1.  Signed Hash Envelopes
 
