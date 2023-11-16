@@ -1286,7 +1286,7 @@ Hash_Envelope = #6.18(Hash_Envelope_as_COSE_Sign1)
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-protected-header" class="section-name selfRef">Protected Header</a>
         </h3>
 <p id="section-3.1-1">TBD 0 (typ), TBD 1 (payload hash alg) and TBD 2 (content type of the preimage of the payload) <span class="bcp14">MUST</span> be present in the protected header and <span class="bcp14">MUST NOT</span> be present in the unprotected header.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">TBD 0 will be assinged by <span>[<a href="#I-D.ietf-cose-typ-header-parameter" class="cite xref">I-D.ietf-cose-typ-header-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">For example:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <div class="lang-cbor-diag sourcecode" id="section-3.1-3">
 <pre>
 {
@@ -1295,9 +1295,14 @@ Hash_Envelope = #6.18(Hash_Envelope_as_COSE_Sign1)
   / typ / TBD 0: application/hashed+cose
   / payload_hash_alg sha-256 / TBD 1: 1
   / payload_preimage_content_type / TBD 2: application/jwk+json
+  / artifact_repository / TBD 3 : pkg:container/customer/image@sha256:244fd47e07d1004f0aed9c?repository_url=vendor.example
 }
 </pre><a href="#section-3.1-3" class="pilcrow">¶</a>
 </div>
+<p id="section-3.1-4">TBD 0 will be assinged by <span>[<a href="#I-D.ietf-cose-typ-header-parameter" class="cite xref">I-D.ietf-cose-typ-header-parameter</a>]</span>, it represents the content type of the code envelope, which includes the protected header and payload.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.1-5">TBD 1 will be assigned by this draft.
+TBD 2 will be assigned by this draft.
+TBD 3 will be assigned by this draft.<a href="#section-3.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="attached-payload">
