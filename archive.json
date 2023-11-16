@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-14T00:01:38.115274+00:00",
+  "timestamp": "2023-11-16T00:01:42.653678+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -76,12 +76,111 @@
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
-      "body": "Per-hash with domain binding.",
+      "body": "Pre-hash with domain binding.",
       "createdAt": "2023-11-08T15:11:48Z",
-      "updatedAt": "2023-11-08T15:11:48Z",
+      "updatedAt": "2023-11-15T14:43:04Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOKqKrRc526DTn",
+      "title": "Add CDDL",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/3",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-11-15T14:48:14Z",
+      "updatedAt": "2023-11-15T14:48:14Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOKqKrRc526H_h",
+      "title": "Need hint to discover payload content",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/4",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "probably another header param",
+      "createdAt": "2023-11-15T14:58:07Z",
+      "updatedAt": "2023-11-15T14:58:07Z",
       "closedAt": null,
       "comments": []
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 5,
+      "id": "PR_kwDOKqKrRc5fiDNg",
+      "title": "Augmented abstract",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/5",
+      "state": "OPEN",
+      "author": "henkbirkholz",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "...and made every sentence a new line.",
+      "createdAt": "2023-11-15T15:36:50Z",
+      "updatedAt": "2023-11-15T21:38:26Z",
+      "baseRepository": "OR13/draft-steele-cose-hash-envelope",
+      "baseRefName": "main",
+      "baseRefOid": "2504ef31c284041e9796dd441be53276f201533a",
+      "headRepository": "OR13/draft-steele-cose-hash-envelope",
+      "headRefName": "some-abstract",
+      "headRefOid": "f14f28a50fd6f9234d7b1e48fec469404ca13bf9",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqKrRc5nTAD8",
+          "commit": {
+            "abbreviatedOid": "f14f28a"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-11-15T21:38:26Z",
+          "updatedAt": "2023-11-15T21:38:26Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOKqKrRc5fjd4-",
+      "title": "Updates",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/6",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "- Add CDDL\r\n- formatting and text updates\r\n- add hint for artifact repo",
+      "createdAt": "2023-11-15T19:39:16Z",
+      "updatedAt": "2023-11-15T19:39:16Z",
+      "baseRepository": "OR13/draft-steele-cose-hash-envelope",
+      "baseRefName": "main",
+      "baseRefOid": "2504ef31c284041e9796dd441be53276f201533a",
+      "headRepository": "OR13/draft-steele-cose-hash-envelope",
+      "headRefName": "feat/cddl",
+      "headRefOid": "de7478096f0be88c06f0116f823c26ad9a271908",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
