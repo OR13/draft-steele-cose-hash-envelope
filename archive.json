@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-16T00:01:42.653678+00:00",
+  "timestamp": "2023-11-19T00:01:38.935642+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -71,48 +71,72 @@
       "id": "I_kwDOKqKrRc52Ptdt",
       "title": "Follow composit sigs approach ",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "OR13",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "Pre-hash with domain binding.",
       "createdAt": "2023-11-08T15:11:48Z",
-      "updatedAt": "2023-11-15T14:43:04Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-11-16T16:43:17Z",
+      "closedAt": "2023-11-16T16:43:16Z",
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "body": "I think we ommit this for now, doing this would break the cases where the payload hash is controlled by the artifact repo",
+          "createdAt": "2023-11-16T16:43:16Z",
+          "updatedAt": "2023-11-16T16:43:16Z"
+        }
+      ]
     },
     {
       "number": 3,
       "id": "I_kwDOKqKrRc526DTn",
       "title": "Add CDDL",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "OR13",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-11-15T14:48:14Z",
-      "updatedAt": "2023-11-15T14:48:14Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-11-16T16:42:37Z",
+      "closedAt": "2023-11-16T16:42:37Z",
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "body": "done",
+          "createdAt": "2023-11-16T16:42:37Z",
+          "updatedAt": "2023-11-16T16:42:37Z"
+        }
+      ]
     },
     {
       "number": 4,
       "id": "I_kwDOKqKrRc526H_h",
       "title": "Need hint to discover payload content",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "OR13",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "probably another header param",
       "createdAt": "2023-11-15T14:58:07Z",
-      "updatedAt": "2023-11-15T14:58:07Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-11-16T16:42:45Z",
+      "closedAt": "2023-11-16T16:42:45Z",
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "body": "done",
+          "createdAt": "2023-11-16T16:42:45Z",
+          "updatedAt": "2023-11-16T16:42:45Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -121,24 +145,26 @@
       "id": "PR_kwDOKqKrRc5fiDNg",
       "title": "Augmented abstract",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/5",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "henkbirkholz",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "...and made every sentence a new line.",
       "createdAt": "2023-11-15T15:36:50Z",
-      "updatedAt": "2023-11-15T21:38:26Z",
+      "updatedAt": "2023-11-16T10:02:35Z",
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
       "baseRefOid": "2504ef31c284041e9796dd441be53276f201533a",
       "headRepository": "OR13/draft-steele-cose-hash-envelope",
       "headRefName": "some-abstract",
       "headRefOid": "f14f28a50fd6f9234d7b1e48fec469404ca13bf9",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-11-16T10:02:34Z",
+      "mergedAt": "2023-11-16T10:02:34Z",
+      "mergedBy": "henkbirkholz",
+      "mergeCommit": {
+        "oid": "a05cda4e34d2dc9a9cfb21425249528a266732ac"
+      },
       "comments": [],
       "reviews": [
         {
@@ -161,26 +187,103 @@
       "id": "PR_kwDOKqKrRc5fjd4-",
       "title": "Updates",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/6",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "OR13",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "- Add CDDL\r\n- formatting and text updates\r\n- add hint for artifact repo",
       "createdAt": "2023-11-15T19:39:16Z",
-      "updatedAt": "2023-11-15T19:39:16Z",
+      "updatedAt": "2023-11-16T16:42:23Z",
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
-      "baseRefOid": "2504ef31c284041e9796dd441be53276f201533a",
+      "baseRefOid": "a05cda4e34d2dc9a9cfb21425249528a266732ac",
       "headRepository": "OR13/draft-steele-cose-hash-envelope",
       "headRefName": "feat/cddl",
-      "headRefOid": "de7478096f0be88c06f0116f823c26ad9a271908",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
-      "comments": [],
-      "reviews": []
+      "headRefOid": "b7f9b285f84d2d58c04807b2fea29c5af7f9a977",
+      "closedAt": "2023-11-16T16:42:23Z",
+      "mergedAt": "2023-11-16T16:42:23Z",
+      "mergedBy": "OR13",
+      "mergeCommit": {
+        "oid": "26cb07e0797705af00e95a193ec22124fc220a80"
+      },
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "body": "I'm merging this, as I have applied the suggestions, and its still pre-00 draft",
+          "createdAt": "2023-11-16T16:42:19Z",
+          "updatedAt": "2023-11-16T16:42:19Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqKrRc5nWtW3",
+          "commit": {
+            "abbreviatedOid": "de74780"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-11-16T10:15:52Z",
+          "updatedAt": "2023-11-16T10:15:52Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5nWuV7",
+          "commit": {
+            "abbreviatedOid": "de74780"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "COLLABORATOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2023-11-16T10:16:59Z",
+          "updatedAt": "2023-11-16T10:17:19Z",
+          "comments": [
+            {
+              "originalPosition": 17,
+              "body": "```suggestion\r\n# Terminology\r\n\r\n{::boilerplate bcp14-tagged}\r\n\r\n# Conventions and Definitions\r\n```",
+              "createdAt": "2023-11-16T10:16:59Z",
+              "updatedAt": "2023-11-16T10:17:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5nY7sg",
+          "commit": {
+            "abbreviatedOid": "de74780"
+          },
+          "author": "aj-stein-nist",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "I tested them and they look good to me, I hope the community enjoys like I do.",
+          "createdAt": "2023-11-16T14:46:28Z",
+          "updatedAt": "2023-11-16T14:46:28Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5naONl",
+          "commit": {
+            "abbreviatedOid": "de74780"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-11-16T16:41:48Z",
+          "updatedAt": "2023-11-16T16:41:48Z",
+          "comments": [
+            {
+              "originalPosition": 17,
+              "body": "applied",
+              "createdAt": "2023-11-16T16:41:48Z",
+              "updatedAt": "2023-11-16T16:41:49Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
