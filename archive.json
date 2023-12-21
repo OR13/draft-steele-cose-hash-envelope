@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-19T00:01:31.023593+00:00",
+  "timestamp": "2023-12-21T00:01:43.419896+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -280,6 +280,101 @@
               "body": "applied",
               "createdAt": "2023-11-16T16:41:48Z",
               "updatedAt": "2023-11-16T16:41:49Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOKqKrRc5iUm4d",
+      "title": "Formatting and spec clarity updates",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7",
+      "state": "OPEN",
+      "author": "SteveLasker",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Adding a bit more formatting and clarity to the spec",
+      "createdAt": "2023-12-19T01:15:51Z",
+      "updatedAt": "2023-12-19T23:20:22Z",
+      "baseRepository": "OR13/draft-steele-cose-hash-envelope",
+      "baseRefName": "main",
+      "baseRefOid": "a8fdde9d01a215c5c71ae95bb5f3de95858b5253",
+      "headRepository": "SteveLasker/draft-steele-cose-hash-envelope",
+      "headRefName": "spec-clarifications",
+      "headRefOid": "f252ccef4ef7f153c06a9f620796f4cbc4b31630",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "body": "I think the intro still needs some work",
+          "createdAt": "2023-12-19T01:30:13Z",
+          "updatedAt": "2023-12-19T01:30:13Z"
+        },
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "body": "Yeah, this was a rough update that I wanted to save before wrapping up for the day.\r\nI'll have more time tomorrow",
+          "createdAt": "2023-12-19T03:37:10Z",
+          "updatedAt": "2023-12-19T03:37:10Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqKrRc5qkfUX",
+          "commit": {
+            "abbreviatedOid": "a5186ee"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-19T01:28:10Z",
+          "updatedAt": "2023-12-19T01:28:10Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5qovoX",
+          "commit": {
+            "abbreviatedOid": "a5186ee"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-12-19T15:02:12Z",
+          "updatedAt": "2023-12-19T15:02:12Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "```suggestion\r\nThis document defines new COSE header parameters for signaling that a payload is the output of a hash function.\r\n```",
+              "createdAt": "2023-12-19T15:02:12Z",
+              "updatedAt": "2023-12-19T15:02:12Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5qrwCP",
+          "commit": {
+            "abbreviatedOid": "a5186ee"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-12-19T23:20:22Z",
+          "updatedAt": "2023-12-19T23:20:22Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "It likely needs a bit more tweaks for readability, but it's more accurate so merged into the PR for content tweaking later.",
+              "createdAt": "2023-12-19T23:20:22Z",
+              "updatedAt": "2023-12-19T23:20:22Z"
             }
           ]
         }
