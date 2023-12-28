@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-26T00:01:25.905872+00:00",
+  "timestamp": "2023-12-28T00:01:33.657580+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -137,6 +137,22 @@
           "updatedAt": "2023-11-16T16:42:45Z"
         }
       ]
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOKqKrRc56k2GX",
+      "title": "COSE_CertHash",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/issues/8",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "See if there is any aligning we can do, and add informative text relating the concepts\r\n\r\nhttps://datatracker.ietf.org/doc/html/draft-ietf-cose-x509-08",
+      "createdAt": "2023-12-26T14:52:02Z",
+      "updatedAt": "2023-12-26T14:52:26Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
