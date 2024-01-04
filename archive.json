@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-02T00:01:32.087168+00:00",
+  "timestamp": "2024-01-04T00:01:42.345322+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -313,7 +313,7 @@
       "labels": [],
       "body": "Adding a bit more formatting and clarity to the spec",
       "createdAt": "2023-12-19T01:15:51Z",
-      "updatedAt": "2023-12-19T23:20:22Z",
+      "updatedAt": "2024-01-03T17:28:27Z",
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
       "baseRefOid": "a8fdde9d01a215c5c71ae95bb5f3de95858b5253",
@@ -393,6 +393,19 @@
               "updatedAt": "2023-12-19T23:20:22Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc5rdFXB",
+          "commit": {
+            "abbreviatedOid": "f252cce"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-01-03T17:28:27Z",
+          "updatedAt": "2024-01-03T17:28:27Z",
+          "comments": []
         }
       ]
     }
