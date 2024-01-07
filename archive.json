@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-04T00:01:42.345322+00:00",
+  "timestamp": "2024-01-07T00:01:43.961458+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -313,13 +313,13 @@
       "labels": [],
       "body": "Adding a bit more formatting and clarity to the spec",
       "createdAt": "2023-12-19T01:15:51Z",
-      "updatedAt": "2024-01-03T17:28:27Z",
+      "updatedAt": "2024-01-05T23:59:08Z",
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
       "baseRefOid": "a8fdde9d01a215c5c71ae95bb5f3de95858b5253",
       "headRepository": "SteveLasker/draft-steele-cose-hash-envelope",
       "headRefName": "spec-clarifications",
-      "headRefOid": "f252ccef4ef7f153c06a9f620796f4cbc4b31630",
+      "headRefOid": "b772fdc5b304612207540d2e5a5b0e14d464ae9b",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -338,6 +338,20 @@
           "body": "Yeah, this was a rough update that I wanted to save before wrapping up for the day.\r\nI'll have more time tomorrow",
           "createdAt": "2023-12-19T03:37:10Z",
           "updatedAt": "2023-12-19T03:37:10Z"
+        },
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "NONE",
+          "body": "I changed the date to fix some kramdown warnings. Your call to revert, keep, change\r\nPR is now ready and passes kramdown tests. \r\n\r\nUltimately, we need to decide how we want to handle \"Too long lines...\" for CDDL. ",
+          "createdAt": "2024-01-04T00:44:13Z",
+          "updatedAt": "2024-01-04T00:44:13Z"
+        },
+        {
+          "author": "JeromySt",
+          "authorAssociation": "NONE",
+          "body": "Is there a reason that special COSE headers and specification are warranted rather than simply following the guidance from [RFC9054](https://www.rfc-editor.org/rfc/rfc9054.html)?  One could use the `COSE_Hash_V` structure easily enough within the embedded payload of a COSE message.  The arguments put forth in RFC9054 still hold true.\r\n\r\nAnother question that comes to mind is that hashing of content to represent and indirect immutable key for the original content isn't a unique COSE issue. As such might it be possible to consider a content-type extension approach in which the content-type can be augmented with something such as `+hash_sha256` to represent the `.Content` is in-fact a hash of the original content/type without needing any new headers?  Of course, this means we lose some of the application specific fields such as location and others proposed here, but we're left with a generic answer to a generic problem verse a COSE specific implementation.",
+          "createdAt": "2024-01-05T23:59:07Z",
+          "updatedAt": "2024-01-05T23:59:07Z"
         }
       ],
       "reviews": [
