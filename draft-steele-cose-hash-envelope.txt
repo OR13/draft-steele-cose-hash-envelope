@@ -4,8 +4,8 @@
 
 Network Working Group                                          O. Steele
 Internet-Draft                                                 Transmute
-Intended status: Standards Track                        16 November 2023
-Expires: 19 May 2024
+Intended status: Standards Track                            January 2024
+Expires: 12 July 2024
 
 
                            COSE Hash Envelope
@@ -13,12 +13,11 @@ Expires: 19 May 2024
 
 Abstract
 
-   This document defines new COSE header parameters in support of a
-   mechanism that uses hashes of detached payload as the COSE payload,
-   which enables faster signature validation for detached payload as the
-   availability of the original payload is not required for signature
-   validation.  Additionally, hints about the detached payload's content
-   format and availability are defined.
+   This document defines new COSE header parameters for signaling that a
+   payload is the output of a hash function.  This mechanism enables
+   faster validation as access to the original payload is not required
+   for signature validation.  Additionally, hints of the detached
+   payload's content format and availability are defined.
 
 About This Document
 
@@ -53,11 +52,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 May 2024.
+   This Internet-Draft will expire on 4 July 2024.
 
 Copyright Notice
 
-   Copyright (c) 2023 IETF Trust and the persons identified as the
+   Copyright (c) 2024 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -72,37 +71,38 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
-   2.  Terminology
-   3.  Signed Hash Envelopes
-     3.1.  Protected Header
-     3.2.  Attached Payload
-     3.3.  Detached Payload
-   4.  Encrypted Hashes
-   5.  Security Considerations
-     5.1.  Choice of Hash Function
-   6.  IANA Considerations
-     6.1.  COSE Header Algorithm Parameters
-     6.2.  Named Information Hash Algorithm Registry
-   7.  Normative References
+     1.1.  Requirements Notation
+   2.  Header Parameters
+     2.1.  Signed Hash Envelopes Example
+     2.2.  Protected Header
+     2.3.  Attached Payload
+     2.4.  Detached Payload
+   3.  Encrypted Hashes
+   4.  Security Considerations
+     4.1.  Choice of Hash Function
+   5.  IANA Considerations
+     5.1.  COSE Header Algorithm Parameters
+     5.2.  Named Information Hash Algorithm Registry
+   6.  Normative References
    Acknowledgments
    Author's Address
 
 1.  Introduction
 
-   COSE defined detached payloads in [RFC9052] in Section 2.
+   COSE defined detached payloads in Section 2 of [RFC9052], using nil
+   as the payload.
 
-   However, in order to verify a signature over a detached payload the
-   payload content needs to availble to the verifier.
+   In order to verify a signature over a detached payload, the verifier
+   must have access to the payload content.  Storing a hash of the
+   content allows for small signature envelopes, that are easy to
+   transport and verify independently.
 
-   Pre-hashing the content, allows for small signatures, that are easy
-   to transport.
-
-   Additional hints in the protected header, ensure cryptographic
-   agility for the hashing and signing algorithms, and discoverability
-   for the original content, which could be too large to move over a
+   Additional hints in the protected header ensure cryptographic agility
+   for the hashing & signing algorithms, and discoverability for the
+   original content which could be prohibitively large to move over a
    network.
 
-2.  Terminology
+1.1.  Requirements Notation
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
@@ -110,19 +110,23 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-   TBD 0:  will be assinged by [I-D.ietf-cose-typ-header-parameter], it
-      represents the content type of the code envelope, which includes
-      the protected header and payload.
+2.  Header Parameters
 
-   TBD 1:  the hash algorithm used to generate the hash about the
-      payload.
+   To represent a hash of a detached payload, the following headers are
+   defined:
 
-   TBD 2:  the content type of the payload the hash represents.
+   TBD 0:  will be assigned by [I-D.ietf-cose-typ-header-parameter],
+      represents the content type of the code envelope, including the
+      protected header and payload
+
+   TBD 1:  the hash algorithm used to generate the hash of the payload
+
+   TBD 2:  the content type of the payload the hash represents
 
    TBD 3:  an identifier enabling a verifier to retrieve the full
       payload preimage.
 
-3.  Signed Hash Envelopes
+2.1.  Signed Hash Envelopes Example
 
    Hash_Envelope_Protected_Header = {
        ; Cryptographic algorithm to use
@@ -169,7 +173,7 @@ Table of Contents
 
    Hash_Envelope = #6.18(Hash_Envelope_as_COSE_Sign1)
 
-3.1.  Protected Header
+2.2.  Protected Header
 
    TBD 0 (typ), TBD 1 (payload hash alg) and TBD 2 (content type of the
    preimage of the payload) MUST be present in the protected header and
@@ -186,14 +190,14 @@ Table of Contents
      / artifact_repository / TBD 3 : pkg:container/customer/image@sha256:244fd47e07d1004f0aed9c?repository_url=vendor.example
    }
 
-   TBD 0 will be assinged by [I-D.ietf-cose-typ-header-parameter], it
+   TBD 0 will be assigned by [I-D.ietf-cose-typ-header-parameter], it
    represents the content type of the code envelope, which includes the
    protected header and payload.
 
    TBD 1 will be assigned by this draft.  TBD 2 will be assigned by this
    draft.  TBD 3 will be assigned by this draft.
 
-3.2.  Attached Payload
+2.3.  Attached Payload
 
    The payload MAY be attached.
 
@@ -206,7 +210,7 @@ Table of Contents
        ]
    )
 
-3.3.  Detached Payload
+2.4.  Detached Payload
 
    The payload MAY be detached.
 
@@ -219,24 +223,24 @@ Table of Contents
        ]
    )
 
-4.  Encrypted Hashes
+3.  Encrypted Hashes
 
    Should we define this?
 
-5.  Security Considerations
+4.  Security Considerations
 
    TODO Security
 
-5.1.  Choice of Hash Function
+4.1.  Choice of Hash Function
 
    It is RECOMMENDED to align the strength of the chosen hash function
    to the strength of the chosen signature algorithm.  For example, when
    signing with ECDSA using P-256 and SHA-256, use SHA-256 to hash the
    payload.
 
-6.  IANA Considerations
+5.  IANA Considerations
 
-6.1.  COSE Header Algorithm Parameters
+5.1.  COSE Header Algorithm Parameters
 
    *  Name: payload hash algorithm
 
@@ -249,7 +253,7 @@ Table of Contents
 
    *  Description: Hash algorithm used to produce the payload.
 
-6.2.  Named Information Hash Algorithm Registry
+5.2.  Named Information Hash Algorithm Registry
 
    *  Name: SHAKE256
 
@@ -276,14 +280,14 @@ Table of Contents
       https://csrc.nist.gov/CSRC/media/Projects/lightweight-
       cryptography/documents/round-2/spec-doc-rnd2/ascon-spec-round2.pdf
 
-7.  Normative References
+6.  Normative References
 
    [I-D.ietf-cose-typ-header-parameter]
               Jones, M. B. and O. Steele, "COSE "typ" (type) Header
               Parameter", Work in Progress, Internet-Draft, draft-ietf-
-              cose-typ-header-parameter-01, 7 November 2023,
+              cose-typ-header-parameter-02, 8 December 2023,
               <https://datatracker.ietf.org/doc/html/draft-ietf-cose-
-              typ-header-parameter-01>.
+              typ-header-parameter-02>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
