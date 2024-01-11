@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-09T00:01:53.039343+00:00",
+  "timestamp": "2024-01-11T00:01:32.882784+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -166,9 +166,17 @@
       "labels": [],
       "body": "Add a single header for an instance or set of `COSE_Hash_V`, instead of multiple headers... as discussed in https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7#issuecomment-1879407221",
       "createdAt": "2024-01-08T14:46:16Z",
-      "updatedAt": "2024-01-08T14:46:16Z",
+      "updatedAt": "2024-01-09T16:42:07Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "JeromySt",
+          "authorAssociation": "NONE",
+          "body": "> The main reasons is integrity protection, and being able to swap detached payload of hash of content for detached payload of content, in protocol messages that require COSE Sign 1.\r\n> \r\n> If   ? 4 : any   # object containing other details and things can be any object, then its totally possible we could simply put a cose sign 1 with detached payload there, but the structure of the signed statement would then become an OR type of special kinds of COSE_Hash_V and special kinds of COSE Sign 1.\r\n> \r\n> I do think its awkward that we can't directly use COSE_Hash_V in COSE sign 1 headers, perhaps registering a single header that is a COSE_Hash_V or set of COSE_Hash_V is a better approach?\r\n\r\nI wanted to continue this discussion here.\r\n\r\nI get the use case for indirect identification of content for COSE vrs direct identification of content.  Unfortunately, COSE was authored in such a way that indirect identification of content is considered an application layer concept and not a core concept within COSE explicitly.\r\n\r\nGiven the only way to validate a COSE message is to provide the content as part of the verification structure, we're left with needing application layer logic to manage expectations of indirect identification.  If we need application layer logic, then I'm not quite seeing how moving everything but the hash value into COSE protected headers solve this problem differently vrs using a `COSE_Hash_V` structure as the COSE message content for indirect identification of content and processing it as such via content-type of COSE_Hash_V identification.\r\n\r\nIt is also possible that there is another problem that moving fields into the COSE protected header is intended to solve, which may not have been fully articulated yet, beyond integrity protection?",
+          "createdAt": "2024-01-09T16:42:06Z",
+          "updatedAt": "2024-01-09T16:42:06Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -322,24 +330,26 @@
       "id": "PR_kwDOKqKrRc5iUm4d",
       "title": "Formatting and spec clarity updates",
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "SteveLasker",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Adding a bit more formatting and clarity to the spec",
       "createdAt": "2023-12-19T01:15:51Z",
-      "updatedAt": "2024-01-08T14:49:40Z",
+      "updatedAt": "2024-01-09T13:56:52Z",
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
       "baseRefOid": "a8fdde9d01a215c5c71ae95bb5f3de95858b5253",
       "headRepository": "SteveLasker/draft-steele-cose-hash-envelope",
       "headRefName": "spec-clarifications",
       "headRefOid": "b772fdc5b304612207540d2e5a5b0e14d464ae9b",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-01-09T13:56:52Z",
+      "mergedAt": "2024-01-09T13:56:52Z",
+      "mergedBy": "OR13",
+      "mergeCommit": {
+        "oid": "8908aaadc0e915901e9bc068a2954ed7a005bd28"
+      },
       "comments": [
         {
           "author": "OR13",
@@ -350,14 +360,14 @@
         },
         {
           "author": "SteveLasker",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "body": "Yeah, this was a rough update that I wanted to save before wrapping up for the day.\r\nI'll have more time tomorrow",
           "createdAt": "2023-12-19T03:37:10Z",
           "updatedAt": "2023-12-19T03:37:10Z"
         },
         {
           "author": "SteveLasker",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "body": "I changed the date to fix some kramdown warnings. Your call to revert, keep, change\r\nPR is now ready and passes kramdown tests. \r\n\r\nUltimately, we need to decide how we want to handle \"Too long lines...\" for CDDL. ",
           "createdAt": "2024-01-04T00:44:13Z",
           "updatedAt": "2024-01-04T00:44:13Z"
@@ -424,7 +434,7 @@
             "abbreviatedOid": "a5186ee"
           },
           "author": "SteveLasker",
-          "authorAssociation": "NONE",
+          "authorAssociation": "CONTRIBUTOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-12-19T23:20:22Z",
