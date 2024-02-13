@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-11T00:01:32.719491+00:00",
+  "timestamp": "2024-02-13T00:01:28.589873+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -166,7 +166,7 @@
       "labels": [],
       "body": "Add a single header for an instance or set of `COSE_Hash_V`, instead of multiple headers... as discussed in https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7#issuecomment-1879407221",
       "createdAt": "2024-01-08T14:46:16Z",
-      "updatedAt": "2024-02-01T10:57:33Z",
+      "updatedAt": "2024-02-12T16:51:59Z",
       "closedAt": null,
       "comments": [
         {
@@ -203,6 +203,13 @@
           "body": "> Are there scenarios that this approach would be incompatible with?\r\n\r\nHonestly (and maybe unsurprisingly so), I am having a hard time to envision usage scenarios where this would pose a problem. I'd even would go as far as to say that the \"indirection is dealt with by application layer\" approach was my preferred choice when the topic came up (sans the now solidifying details of `+cose-hash-v` and the corresponding `COSE_Hash_V`, which I totally can get behind at). I'd happily step up as contributor, if this proposal becomes the new direction,",
           "createdAt": "2024-02-01T10:57:32Z",
           "updatedAt": "2024-02-01T10:57:32Z"
+        },
+        {
+          "author": "ianjmcm",
+          "authorAssociation": "NONE",
+          "body": "Anyone have any other input here? We're going to put a working implementation and can come back to this group to share and discuss more as needed. ",
+          "createdAt": "2024-02-12T16:51:58Z",
+          "updatedAt": "2024-02-12T16:51:58Z"
         }
       ]
     }
