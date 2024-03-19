@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-03-17T00:01:27.101144+00:00",
+  "timestamp": "2024-03-19T00:01:18.973049+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -376,7 +376,7 @@
       "baseRepository": "OR13/draft-steele-cose-hash-envelope",
       "baseRefName": "main",
       "baseRefOid": "a8fdde9d01a215c5c71ae95bb5f3de95858b5253",
-      "headRepository": "SteveLasker/draft-steele-cose-hash-envelope",
+      "headRepository": null,
       "headRefName": "spec-clarifications",
       "headRefOid": "b772fdc5b304612207540d2e5a5b0e14d464ae9b",
       "closedAt": "2024-01-09T13:56:52Z",
