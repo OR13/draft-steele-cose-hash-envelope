@@ -4,8 +4,9 @@
 
 Network Working Group                                          O. Steele
 Internet-Draft                                                 Transmute
-Intended status: Standards Track                            January 2024
-Expires: 12 July 2024
+Intended status: Standards Track                               S. Lasker
+Expires: 3 August 2024                                        DataTrails
+                                                            January 2024
 
 
                            COSE Hash Envelope
@@ -85,7 +86,7 @@ Table of Contents
      5.2.  Named Information Hash Algorithm Registry
    6.  Normative References
    Acknowledgments
-   Author's Address
+   Authors' Addresses
 
 1.  Introduction
 
@@ -285,9 +286,9 @@ Table of Contents
    [I-D.ietf-cose-typ-header-parameter]
               Jones, M. B. and O. Steele, "COSE "typ" (type) Header
               Parameter", Work in Progress, Internet-Draft, draft-ietf-
-              cose-typ-header-parameter-02, 8 December 2023,
+              cose-typ-header-parameter-05, 3 April 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-cose-
-              typ-header-parameter-02>.
+              typ-header-parameter-05>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -309,8 +310,13 @@ Acknowledgments
    document: Carsten Bormann, Henk Birkholz, Antoine Delignat-Lavaud,
    Cedric Fournet.
 
-Author's Address
+Authors' Addresses
 
    Orie Steele
    Transmute
    Email: orie@transmute.industries
+
+
+   Steve Lasker
+   DataTrails
+   Email: steve.lasker@datatrails.ai
