@@ -5,8 +5,10 @@
 Network Working Group                                          O. Steele
 Internet-Draft                                                 Transmute
 Intended status: Standards Track                               S. Lasker
-Expires: 23 December 2024                                     DataTrails
-                                                            21 June 2024
+Expires: 28 December 2024                                     DataTrails
+                                                             H. Birkholz
+                                                          Fraunhofer SIT
+                                                            26 June 2024
 
 
                            COSE Hash Envelope
@@ -53,7 +55,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 December 2024.
+   This Internet-Draft will expire on 28 December 2024.
 
 Copyright Notice
 
@@ -325,3 +327,11 @@ Authors' Addresses
    Steve Lasker
    DataTrails
    Email: steve.lasker@datatrails.ai
+
+
+   Henk Birkholz
+   Fraunhofer SIT
+   Rheinstrasse 75
+   64295 Darmstadt
+   Germany
+   Email: henk.birkholz@ietf.contact
