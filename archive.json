@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-25T00:01:19.464989+00:00",
+  "timestamp": "2024-06-27T00:01:21.093770+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -494,6 +494,48 @@
           "body": "",
           "createdAt": "2024-01-03T17:28:27Z",
           "updatedAt": "2024-01-03T17:28:27Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOKqKrRc5zf5Td",
+      "title": "Editor Henk",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/10",
+      "state": "MERGED",
+      "author": "henkbirkholz",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "added @henkbirkholz as editor for WGAC",
+      "createdAt": "2024-06-25T13:18:09Z",
+      "updatedAt": "2024-06-26T07:26:02Z",
+      "baseRepository": "OR13/draft-steele-cose-hash-envelope",
+      "baseRefName": "main",
+      "baseRefOid": "ba99942a2d3bb3fed447b7531966c683fdcdc469",
+      "headRepository": "OR13/draft-steele-cose-hash-envelope",
+      "headRefName": "editor-henk",
+      "headRefOid": "2cd496e6b31c2e15828f96c4defafd818a64883d",
+      "closedAt": "2024-06-26T07:26:01Z",
+      "mergedAt": "2024-06-26T07:26:01Z",
+      "mergedBy": "OR13",
+      "mergeCommit": {
+        "oid": "d102df6a162ca54a81c3a7838b87c7a8a6b3a5c8"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqKrRc5_nE3B",
+          "commit": {
+            "abbreviatedOid": "2cd496e"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-06-26T07:25:58Z",
+          "updatedAt": "2024-06-26T07:25:58Z",
           "comments": []
         }
       ]
