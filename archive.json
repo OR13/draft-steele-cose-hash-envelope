@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-30T00:01:22.619650+00:00",
+  "timestamp": "2024-07-02T00:01:35.297396+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -166,7 +166,7 @@
       "labels": [],
       "body": "Add a single header for an instance or set of `COSE_Hash_V`, instead of multiple headers... as discussed in https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7#issuecomment-1879407221",
       "createdAt": "2024-01-08T14:46:16Z",
-      "updatedAt": "2024-02-12T16:51:59Z",
+      "updatedAt": "2024-07-01T14:42:54Z",
       "closedAt": null,
       "comments": [
         {
@@ -210,6 +210,13 @@
           "body": "Anyone have any other input here? We're going to put a working implementation and can come back to this group to share and discuss more as needed. ",
           "createdAt": "2024-02-12T16:51:58Z",
           "updatedAt": "2024-02-12T16:51:58Z"
+        },
+        {
+          "author": "SteveLasker",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@ianjmcm, have you made any progress on this? We're going to bring this draft to the COSE working group in Vancouver. More input would be really helpful.  ",
+          "createdAt": "2024-07-01T14:42:53Z",
+          "updatedAt": "2024-07-01T14:42:53Z"
         }
       ]
     }
