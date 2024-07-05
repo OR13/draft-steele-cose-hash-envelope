@@ -1280,24 +1280,19 @@ Storing a hash of the content allows for small signature envelopes, that are eas
       </h2>
 <p id="section-2-1">To represent a hash of a payload, the following headers are defined:<a href="#section-2-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-2-2">
-        <dt id="section-2-2.1">typ 16:</dt>
+        <dt id="section-2-2.1">TBD_1:</dt>
         <dd style="margin-left: 1.5em" id="section-2-2.2">
-          <p id="section-2-2.2.1">Assigned by <span>[<a href="#RFC9596" class="cite xref">RFC9596</a>]</span>, represents the content type of the code envelope, including the protected header and payload<a href="#section-2-2.2.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.2.1">the hash algorithm used to generate the hash of the payload<a href="#section-2-2.2.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.3">TBD_1:</dt>
+<dt id="section-2-2.3">TBD_2:</dt>
         <dd style="margin-left: 1.5em" id="section-2-2.4">
-          <p id="section-2-2.4.1">the hash algorithm used to generate the hash of the payload<a href="#section-2-2.4.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.4.1">the content type of the payload the hash represents<a href="#section-2-2.4.1" class="pilcrow">¶</a></p>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.5">TBD_2:</dt>
+<dt id="section-2-2.5">TBD_3:</dt>
         <dd style="margin-left: 1.5em" id="section-2-2.6">
-          <p id="section-2-2.6.1">the content type of the payload the hash represents<a href="#section-2-2.6.1" class="pilcrow">¶</a></p>
-</dd>
-        <dd class="break"></dd>
-<dt id="section-2-2.7">TBD_3:</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.8">
-          <p id="section-2-2.8.1">an identifier enabling a verifier to retrieve the full payload preimage.<a href="#section-2-2.8.1" class="pilcrow">¶</a></p>
+          <p id="section-2-2.6.1">an identifier enabling a verifier to retrieve the full payload preimage.<a href="#section-2-2.6.1" class="pilcrow">¶</a></p>
 </dd>
       <dd class="break"></dd>
 </dl>
