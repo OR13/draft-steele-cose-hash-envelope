@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-04T00:01:19.547213+00:00",
+  "timestamp": "2024-07-07T00:01:22.118288+00:00",
   "repo": "OR13/draft-steele-cose-hash-envelope",
   "labels": [
     {
@@ -213,7 +213,7 @@
         },
         {
           "author": "SteveLasker",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "body": "@ianjmcm, have you made any progress on this? We're going to bring this draft to the COSE working group in Vancouver. More input would be really helpful.  ",
           "createdAt": "2024-07-01T14:42:53Z",
           "updatedAt": "2024-07-01T14:42:53Z"
@@ -374,7 +374,7 @@
       "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/7",
       "state": "MERGED",
       "author": "SteveLasker",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Adding a bit more formatting and clarity to the spec",
@@ -402,14 +402,14 @@
         },
         {
           "author": "SteveLasker",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "body": "Yeah, this was a rough update that I wanted to save before wrapping up for the day.\r\nI'll have more time tomorrow",
           "createdAt": "2023-12-19T03:37:10Z",
           "updatedAt": "2023-12-19T03:37:10Z"
         },
         {
           "author": "SteveLasker",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "body": "I changed the date to fix some kramdown warnings. Your call to revert, keep, change\r\nPR is now ready and passes kramdown tests. \r\n\r\nUltimately, we need to decide how we want to handle \"Too long lines...\" for CDDL. ",
           "createdAt": "2024-01-04T00:44:13Z",
           "updatedAt": "2024-01-04T00:44:13Z"
@@ -476,7 +476,7 @@
             "abbreviatedOid": "a5186ee"
           },
           "author": "SteveLasker",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2023-12-19T23:20:22Z",
@@ -544,6 +544,213 @@
           "createdAt": "2024-06-26T07:25:58Z",
           "updatedAt": "2024-06-26T07:25:58Z",
           "comments": []
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOKqKrRc50kTz6",
+      "title": "Updates for 120 Submission",
+      "url": "https://github.com/OR13/draft-steele-cose-hash-envelope/pull/11",
+      "state": "MERGED",
+      "author": "SteveLasker",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-05T21:18:01Z",
+      "updatedAt": "2024-07-06T16:39:56Z",
+      "baseRepository": "OR13/draft-steele-cose-hash-envelope",
+      "baseRefName": "main",
+      "baseRefOid": "d102df6a162ca54a81c3a7838b87c7a8a6b3a5c8",
+      "headRepository": "OR13/draft-steele-cose-hash-envelope",
+      "headRefName": "steve/streamline",
+      "headRefOid": "0b62dcf79db5da3f417603d231d630826a791fc0",
+      "closedAt": "2024-07-06T16:39:55Z",
+      "mergedAt": "2024-07-06T16:39:55Z",
+      "mergedBy": "SteveLasker",
+      "mergeCommit": {
+        "oid": "b0500d1407ff8fc13390c2dc1386348aff0a72be"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKqKrRc6A0mS3",
+          "commit": {
+            "abbreviatedOid": "3c0cadf"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T21:24:42Z",
+          "updatedAt": "2024-07-05T21:24:43Z",
+          "comments": [
+            {
+              "originalPosition": 84,
+              "body": "```suggestion\r\n```",
+              "createdAt": "2024-07-05T21:24:42Z",
+              "updatedAt": "2024-07-05T21:24:43Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A0mUx",
+          "commit": {
+            "abbreviatedOid": "3c0cadf"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T21:24:57Z",
+          "updatedAt": "2024-07-05T21:24:57Z",
+          "comments": [
+            {
+              "originalPosition": 84,
+              "body": "We don't even need to define this anymore",
+              "createdAt": "2024-07-05T21:24:57Z",
+              "updatedAt": "2024-07-05T21:24:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A0mYj",
+          "commit": {
+            "abbreviatedOid": "3c0cadf"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-07-05T21:25:30Z",
+          "updatedAt": "2024-07-05T21:25:30Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A0m5b",
+          "commit": {
+            "abbreviatedOid": "3c0cadf"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T21:29:14Z",
+          "updatedAt": "2024-07-05T21:29:14Z",
+          "comments": [
+            {
+              "originalPosition": 84,
+              "body": "The section says \"Header Parameters\", and these are the header parameters. One just happens to already have an assignment. As opposed to, \"Requested Header Parameters\".\r\n\r\nOnce these are assigned, they'd all have allocations. ",
+              "createdAt": "2024-07-05T21:29:14Z",
+              "updatedAt": "2024-07-05T21:29:14Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A0njO",
+          "commit": {
+            "abbreviatedOid": "3c0cadf"
+          },
+          "author": "OR13",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-05T21:33:57Z",
+          "updatedAt": "2024-07-05T21:33:57Z",
+          "comments": [
+            {
+              "originalPosition": 84,
+              "body": "I think this suggestion should be applied because:\r\n\r\nhttps://github.com/OR13/draft-steele-cose-hash-envelope/pull/11/files#diff-939f0d001ab3ed3d6adaedfa8e4b077068e26edc5477607a69c04eb6b27e51a5R130\r\n\r\ntyp is optional in the CDDL and its defined in a different document.\r\n\r\n",
+              "createdAt": "2024-07-05T21:33:57Z",
+              "updatedAt": "2024-07-05T21:33:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A1prZ",
+          "commit": {
+            "abbreviatedOid": "2bf4f90"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-06T15:56:17Z",
+          "updatedAt": "2024-07-06T16:01:03Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "liked the previous phraxing better. What problem was solved?",
+              "createdAt": "2024-07-06T15:56:17Z",
+              "updatedAt": "2024-07-06T16:01:03Z"
+            },
+            {
+              "originalPosition": 15,
+              "body": "Maybe:\r\n\r\n```suggestion\r\nAdditionally, hints of the detached payload's content format and availability are defined providing references to optional discovery mechanisms that can help to find original payload content.\r\n```",
+              "createdAt": "2024-07-06T15:58:59Z",
+              "updatedAt": "2024-07-06T16:01:03Z"
+            },
+            {
+              "originalPosition": 223,
+              "body": "* -> - seems non-consequential?",
+              "createdAt": "2024-07-06T16:00:43Z",
+              "updatedAt": "2024-07-06T16:01:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A1pz3",
+          "commit": {
+            "abbreviatedOid": "2bf4f90"
+          },
+          "author": "henkbirkholz",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "but let's \ud83d\udea2 it. Maybe check suggested changes, though.",
+          "createdAt": "2024-07-06T16:02:06Z",
+          "updatedAt": "2024-07-06T16:02:06Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A1qfV",
+          "commit": {
+            "abbreviatedOid": "2bf4f90"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-06T16:31:23Z",
+          "updatedAt": "2024-07-06T16:31:23Z",
+          "comments": [
+            {
+              "originalPosition": 12,
+              "body": "I was applying feedback from Grammarly as part of the additional changes.",
+              "createdAt": "2024-07-06T16:31:23Z",
+              "updatedAt": "2024-07-06T16:31:23Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKqKrRc6A1qkS",
+          "commit": {
+            "abbreviatedOid": "0b62dcf"
+          },
+          "author": "SteveLasker",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-07-06T16:34:36Z",
+          "updatedAt": "2024-07-06T16:34:36Z",
+          "comments": [
+            {
+              "originalPosition": 223,
+              "body": "The only change here was * to - for markdown formatting validation.\r\n\r\nWas there another suggestion?",
+              "createdAt": "2024-07-06T16:34:36Z",
+              "updatedAt": "2024-07-06T16:34:36Z"
+            }
+          ]
         }
       ]
     }
