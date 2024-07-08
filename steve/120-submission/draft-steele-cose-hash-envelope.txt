@@ -209,12 +209,12 @@ Table of Contents
 
    The payload MAY be attached.
 
-   18(                                 / COSE Sign 1                   /
+   18(                                 / COSE Sign 1  /
        [
-         h'a4013822...3a616263',       / Protected                     /
-         {}                            / Unprotected                   /
-         h'317cedc7...c494e772',       / Payload                       /
-         h'15280897...93ef39e5'        / Signature                     /
+         h'a4013822...3a616263',       / Protected    /
+         {}                            / Unprotected  /
+         h'317cedc7...c494e772',       / Payload      /
+         h'15280897...93ef39e5'        / Signature    /
        ]
    )
 
@@ -222,12 +222,12 @@ Table of Contents
 
    The payload MAY be detached.
 
-   18(                                 / COSE Sign 1                   /
+   18(                                 / COSE Sign 1      /
        [
-         h'a4013822...3a616263',       / Protected                     /
-         {}                            / Unprotected                   /
-         nil,                          / Detached payload              /
-         h'15280897...93ef39e5'        / Signature                     /
+         h'a4013822...3a616263',       / Protected        /
+         {}                            / Unprotected      /
+         nil,                          / Detached payload /
+         h'15280897...93ef39e5'        / Signature        /
        ]
    )
 

@@ -1341,12 +1341,12 @@ TBD 3 will be assigned by this draft.<a href="#section-2.2-5" class="pilcrow">¶
 <p id="section-2.3-1">The payload <span class="bcp14">MAY</span> be attached.<a href="#section-2.3-1" class="pilcrow">¶</a></p>
 <div class="lang-cbor-diag sourcecode" id="section-2.3-2">
 <pre>
-18(                                 / COSE Sign 1                   /
+18(                                 / COSE Sign 1  /
     [
-      h'a4013822...3a616263',       / Protected                     /
-      {}                            / Unprotected                   /
-      h'317cedc7...c494e772',       / Payload                       /
-      h'15280897...93ef39e5'        / Signature                     /
+      h'a4013822...3a616263',       / Protected    /
+      {}                            / Unprotected  /
+      h'317cedc7...c494e772',       / Payload      /
+      h'15280897...93ef39e5'        / Signature    /
     ]
 )
 </pre><a href="#section-2.3-2" class="pilcrow">¶</a>
@@ -1361,12 +1361,12 @@ TBD 3 will be assigned by this draft.<a href="#section-2.2-5" class="pilcrow">¶
 <p id="section-2.4-1">The payload <span class="bcp14">MAY</span> be detached.<a href="#section-2.4-1" class="pilcrow">¶</a></p>
 <div class="lang-cbor-diag sourcecode" id="section-2.4-2">
 <pre>
-18(                                 / COSE Sign 1                   /
+18(                                 / COSE Sign 1      /
     [
-      h'a4013822...3a616263',       / Protected                     /
-      {}                            / Unprotected                   /
-      nil,                          / Detached payload              /
-      h'15280897...93ef39e5'        / Signature                     /
+      h'a4013822...3a616263',       / Protected        /
+      {}                            / Unprotected      /
+      nil,                          / Detached payload /
+      h'15280897...93ef39e5'        / Signature        /
     ]
 )
 </pre><a href="#section-2.4-2" class="pilcrow">¶</a>
